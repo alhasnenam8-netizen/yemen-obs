@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- placeholder light-mode screenshot 1200x700 -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <rect width="1200" height="700" fill="#f6f8fb"/>
+  <g transform="translate(60,40)">
+    <rect width="1080" height="620" rx="18" fill="#ffffff" stroke="#eef3f8"/>
+    <!-- top -->
+    <rect x="28" y="28" width="420" height="40" rx="8" fill="#f3f7fb" stroke="#e6eef3"/>
+    <rect x="28" y="84" width="740" height="52" rx="10" fill="#f7f9fc" stroke="#eef3f8"/>
+    <!-- cards -->
+    <g transform="translate(28,156)" fill="#ffffff" stroke="#eef3f8">
+      <rect x="0" y="0" width="320" height="160" rx="10"/>
+      <rect x="340" y="0" width="320" height="160" rx="10"/>
+      <rect x="680" y="0" width="320" height="160" rx="10"/>
+      <rect x="0" y="180" width="320" height="160" rx="10"/>
+      <rect x="340" y="180" width="320" height="160" rx="10"/>
+      <rect x="680" y="180" width="320" height="160" rx="10"/>
+    </g>
+    <text x="36" y="38" fill="#0b1220" font-size="18" font-family="Cairo, sans-serif" font-weight="700">وضع نهاري — Light Mode (Placeholder)</text>
+    <text x="36" y="600" fill="#007bff" font-size="12" font-family="Cairo, sans-serif">استبدل هذا الملف بملف PNG أو JPG فعلي من جهازك</text>
+  </g>
+</svg>

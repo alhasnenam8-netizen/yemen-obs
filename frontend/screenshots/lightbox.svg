@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- placeholder lightbox screenshot 1000x600 -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600">
+  <rect width="1000" height="600" fill="#0b1220"/>
+  <g transform="translate(40,30)">
+    <rect width="920" height="540" rx="14" fill="#0f1726" stroke="#0b2133"/>
+    <!-- large image area -->
+    <rect x="24" y="24" width="872" height="380" rx="10" fill="#07101a" stroke="#0b2133"/>
+    <!-- caption -->
+    <rect x="24" y="420" width="600" height="32" rx="8" fill="#07101a" stroke="#0b2133"/>
+    <text x="40" y="444" fill="#9aa6b2" font-size="14" font-family="Cairo, sans-serif">Lightbox — معاينة الصورة/الفيديو (Placeholder)</text>
+    <text x="40" y="520" fill="#7ce3c1" font-size="12" font-family="Cairo, sans-serif">استبدل هذه الصورة بملف شاشة من التطبيق الحقيقي</text>
+    <!-- play icon -->
+    <polygon points="820,210 860,240 820,270" fill="#57a6ff" opacity="0.95"/>
+  </g>
+</svg>

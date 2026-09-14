@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  telegram-posts:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+      - CHANNEL_USERNAME=${CHANNEL_USERNAME}
+      - POLL_INTERVAL_MS=${POLL_INTERVAL_MS:-30000}
+      - PORT=3000
+    volumes:
+      # persist cache between restarts (optional)
+      - ./backend/cache.json:/app/backend/cache.json
+      # serve frontend files from host during development (read-only)
+      - ./frontend:/app/frontend:ro
+    restart: unless-stopped
