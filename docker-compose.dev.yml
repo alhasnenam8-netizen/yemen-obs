@@ -1,0 +1,24 @@
+version: "3.8"
+services:
+  telegram-posts-dev:
+    image: node:18-alpine
+    working_dir: /app/backend
+    ports:
+      - "3000:3000"
+    env_file:
+      - ./backend/.env.example
+    environment:
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+      - CHANNEL_USERNAME=${CHANNEL_USERNAME}
+      - POLL_INTERVAL_MS=${POLL_INTERVAL_MS:-30000}
+      - PORT=3000
+    volumes:
+      - ./backend:/app/backend:delegated
+      - ./frontend:/app/frontend:delegated
+      - /app/backend/node_modules
+    command: ["sh", "-c", "cd /app/backend && npm install && npx nodemon --watch ../frontend --watch . server.js"]
+    stdin_open: true
+    tty: true
+    environment:
+      - NODE_ENV=development
+    restart: unless-stopped
